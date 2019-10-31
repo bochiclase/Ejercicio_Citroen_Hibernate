@@ -37,7 +37,7 @@ import javax.persistence.Table;
 		
 		/*Lista de coches en el concesionario*/
 		
-	@ManyToMany(cascade=CascadeType.ALL)
+	@ManyToMany
 	
 	private List <CocheBean> coches = new ArrayList <CocheBean>();
 	
@@ -64,7 +64,7 @@ import javax.persistence.Table;
 		
 		
 		/*Añadir trabajadores al concesionario*/
-	@OneToMany(mappedBy="concesionario", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy="concesionario")
 	private List <TrabajadorBean> trabajadores = new ArrayList <TrabajadorBean>();
 		
 		/*METODO DE LA RELACION*/
@@ -80,7 +80,7 @@ import javax.persistence.Table;
 
 	/*Añadir al concesionario el taller*/
 	
-	@OneToOne(cascade=CascadeType.ALL)
+	@OneToOne
 	private TallerBean taller;
 
 	

@@ -3,9 +3,20 @@ package citroen.util;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+
+
+
+
+
 public class ConnectionEntityManagerFactory {
+	
+	
+	
 private static EntityManagerFactory entityManagerFactory = null;
 	
+
+
+
 	private ConnectionEntityManagerFactory() {
 		
 		entityManagerFactory = Persistence.createEntityManagerFactory("Adrian");

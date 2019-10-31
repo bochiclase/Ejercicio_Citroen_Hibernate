@@ -64,7 +64,7 @@ public class Start {
 		
 		
 		
-		
+	
 
 		TrabajadorBean trabajador1 = new TrabajadorBean();
 		trabajador1.setDNI("345783094G");
@@ -86,6 +86,7 @@ public class Start {
 		trabajador2.setTeléfono("9547685");
 		trabajador2.setSueldo(2300);
 		
+	
 		
 		CategoriaBean categoria1 = new CategoriaBean();
 		categoria1.setNombre("Gerente");
@@ -139,11 +140,7 @@ public class Start {
 		concesonario2.addTrabajador(trabajador1);
 		concesonario2.setTaller(taller2);
 		
-		
-		
-		
-		
-		
+
 
 		CreateCategoria guardar_categoria = new CreateCategoria();
 		guardar_categoria.create(categoria1);
@@ -153,30 +150,29 @@ public class Start {
 		guardar_categoria.create(categoria5);
 		guardar_categoria.create(categoria6);
 		
-		System.out.println("Control");
-		
-		CreateConcesionario guardar_concesionarios = new CreateConcesionario();
-		guardar_concesionarios.create(concesonario1);
-		guardar_concesionarios.create(concesonario2);
-		
-		
-		
-		CreateTrabajador guardar_trabajadores = new CreateTrabajador();
-		guardar_trabajadores.create(trabajador1);
-		guardar_trabajadores.create(trabajador2);
-		
-
-		
-		
-
-		CreateTaller guardar_talleres = new CreateTaller();
-		guardar_talleres.create(taller1);
-		guardar_talleres.create(taller2);
+		System.out.println("aqui llego");
 		
 		
 		CreateCoche guardar_coches = new CreateCoche();
 		guardar_coches.create(coche1);
 		guardar_coches.create(coche2);
+		
+		CreateTaller guardar_talleres = new CreateTaller();
+		guardar_talleres.create(taller1);
+		guardar_talleres.create(taller2);
+		
+		CreateConcesionario guardar_concesionarios = new CreateConcesionario();
+		guardar_concesionarios.create(concesonario1);
+		guardar_concesionarios.create(concesonario2);
+		
+
+		CreateTrabajador guardar_trabajadores = new CreateTrabajador();
+		guardar_trabajadores.create(trabajador1);
+		guardar_trabajadores.create(trabajador2);
+		
+
+	
+	
 		
 		
 		

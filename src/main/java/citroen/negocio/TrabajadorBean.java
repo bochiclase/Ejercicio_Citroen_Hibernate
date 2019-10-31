@@ -39,11 +39,11 @@ public class TrabajadorBean {
 	/*RELACIONES*/
 	
 	/*ConcesiorarioBean*/
-	@ManyToOne(cascade=CascadeType.ALL)
+	@ManyToOne
 	private ConcesionarioBean concesionario;
 	
 	/*Categoria*/
-	@ManyToOne(cascade=CascadeType.ALL)
+	@ManyToOne
 	private CategoriaBean categoria;
 	
 	

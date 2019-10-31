@@ -33,7 +33,7 @@ public class CategoriaBean {
 	
 	
 	/*Trabajador*/
-	@OneToMany(mappedBy = "categoria", cascade= CascadeType.ALL)
+	@OneToMany(mappedBy = "categoria")
 	private List <TrabajadorBean> trabajadores = new ArrayList <TrabajadorBean>();
 	
 	
